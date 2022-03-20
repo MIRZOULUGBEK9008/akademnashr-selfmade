@@ -31,7 +31,8 @@ img {
 }
 
 *:focus {
-  outline: 2px dotted #FF7500;
+  outline: 3px dotted #FF7500;
+  outline-offset: 2px;
 }
 
 /* CONTAINER  */
@@ -130,4 +131,57 @@ img {
 
 .site-button:active {
   opacity: 0.6;
+}
+
+
+/* HERO  */
+.main-hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-one {
+  background-color: #252420;
+}
+
+.orange-line {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  width: 80px;
+  height: 3px;
+  background-color: #FF7500;
+  border: none;
+}
+
+.hero-centent {
+  width: 387px;
+}
+
+.hero-heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  color: #fff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.hero-paragraph {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.for-buy {
+  margin: 0;
+}
+
+.pyhton-img {
+  border-radius: 8px; box-shadow: 24px 24px 0px 0px rgba(255, 117, 0, 0.6);
 }
