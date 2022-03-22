@@ -210,12 +210,9 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
+  justify-content: space-between;
   list-style: none;
   margin-bottom: 181px;
-}
-
-.hero-two-list-item:not(:last-child) {
-  margin-right: 40px;
 }
 
 .hero-two-img {
