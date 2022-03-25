@@ -1,4 +1,41 @@
 /* GLOBAL STYLES */
+:root {
+  --site-main-color: #ff7500;
+  --site-main-color-two: #252420;
+  --site-main-font-family: "Roboto", "Arial", sans-serif;
+  --site-heading-font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+/* FONT-FACE  */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -17,7 +54,7 @@ body {
   height: 100%;
   background-color: #fff;
   color: #222;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: var(--site-main-font-family);
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
@@ -31,7 +68,7 @@ img {
 }
 
 *:focus {
-  outline: 2px dotted #FF7500;
+  outline: 2px dotted var(--site-main-color);
   outline-offset: 1px;
 }
 
@@ -62,7 +99,7 @@ img {
 .site-header {
   padding-top: 16px;
   padding-bottom: 16px;
-  border-top: 5px solid #FF7500;
+  border-top: 5px solid var(--site-main-color);
 }
 
 /* SITE-LOGO  */
@@ -96,7 +133,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: var(--site-main-font-family);
   font-size: 13px;
   line-height: normal;
   font-weight: 500;
@@ -105,7 +142,7 @@ img {
 }
 
 .item-link:hover {
-  color: #FF7500;
+  color: var(--site-main-color);
 }
 
 .item-link:active {
@@ -116,7 +153,7 @@ img {
   padding: 12px 24px;
   text-decoration: none;
   color: #fff;
-  background-color: #FF7500;
+  background-color: var(--site-main-color);
   border-radius: 4px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 13px;
@@ -143,7 +180,7 @@ img {
 }
 
 .hero-one {
-  background-color: #252420;
+  background-color: var(--site-main-color-two);
   padding-top: 40px;
   padding-bottom: 40px;
   margin-bottom: 107px;
@@ -155,7 +192,7 @@ img {
   margin-bottom: 40px;
   width: 80px;
   height: 3px;
-  background-color: #FF7500;
+  background-color: var(--site-main-color);
   border: none;
 }
 
@@ -168,7 +205,7 @@ img {
   padding: 0;
   margin-bottom: 24px;
   color: #fff;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: var(--site-heading-font-family);
   font-size: 40px;
   line-height: 48px;
   font-weight: 700;
@@ -199,7 +236,7 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 72px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: var(--site-heading-font-family);
   font-size: 72px;
   line-height: 120%;
   font-weight: 700;
@@ -250,7 +287,7 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 12px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: var(--site-heading-font-family);
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
@@ -272,7 +309,7 @@ img {
 .hero-three {
   width: 1100px;
   border-radius: 12px;
-  background-color: #252420;
+  background-color: var(--site-main-color-two);
   padding: 64px;
   margin-bottom: 160px;
 }
@@ -292,7 +329,7 @@ img {
   padding: 0;
   margin-bottom: 24px;
   color: #fff;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: var(--site-heading-font-family);
   font-size: 40px;
   line-height: 48px;
   font-weight: 700;
@@ -301,7 +338,7 @@ img {
 
 .hero-three-paragraph {
   color: #fff;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: var(--site-main-font-family);
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -313,7 +350,7 @@ img {
 
 span {
   font-weight: 500;
-  color: #FF7500;
+  color: var(--site-main-color);
 }
 
 .sale-img {
@@ -353,7 +390,7 @@ span {
 }
 
 .social-media-link:hover {
-  color: #FF7500;
+  color: var(--site-main-color);
 }
 
 .social-media-link:active {
@@ -387,9 +424,9 @@ span {
   width: 224px;
 }
 .footer-list-items-links {
-  color: #252420;
+  color: var(--site-main-color-two);
   text-decoration: none;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: var(--site-main-font-family);
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
@@ -397,7 +434,7 @@ span {
 }
 
 .footer-list-items-links:hover {
-  color: #FF7500;
+  color: var(--site-main-color);
 }
 
 .footer-list-items-links:active {
