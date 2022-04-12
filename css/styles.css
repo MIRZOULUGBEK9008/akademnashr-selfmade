@@ -10,7 +10,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/") format("woff2"),
-    url("../fonts/Roboto-Regular.woff") format("woff");
+  url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
   font-family: "Roboto Condensed";
   src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
-    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  url("../fonts/RobotoCondensed-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -28,7 +28,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
-    url("../fonts/Roboto-Medium.woff") format("woff");
+  url("../fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -84,6 +84,7 @@ img {
 
 /* BUTTON  */
 .site-button {
+  display: inline-block;
   padding: 12px 24px;
   text-decoration: none;
   color: #fff;
