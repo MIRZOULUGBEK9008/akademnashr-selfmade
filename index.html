@@ -17,199 +17,224 @@
     <!-- <link rel="stylesheet" href="css/css.min.css"> -->
   </head>
   <body>
+
+    <!-- SITE HEADER  -->
     <header class="site-header">
-      <div class="container">
-        <div class="site-header-main">
+      <div class="site-header__container container">
 
-          <!-- SITE-LOGO  -->
-          <a class="site-logo" href="https://akademnashr.uz/" target="_blank">
-            <img src="img/site-logo.svg" width="227" height="60" alt="site-logo">
+        <!-- LOGO  -->
+        <a class="logo" href="https://akademnashr.uz/" target="_blank">
+          <img src="img/site-logo.svg" width="227" height="60" alt="site-logo">
+        </a>
+
+        <!-- SITE-NAV  -->
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item"><a class="sitenav__link" href="#">Bosh sahifa</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="#">Kitoblar</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="#">Aksiyalar</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="#">Kontaktlar</a></li>
+          </ul>
+
+          <!-- BUTTON  -->
+          <a class="button button--orange" href="#">
+            Ro’yxatdan o’tish
           </a>
-
-          <!-- SITE-NAV  -->
-          <nav class="site-nav">
-            <ul class="site-list">
-              <li class="site-list-item"><a class="item-link" href="#">Bosh sahifa</a></li>
-              <li class="site-list-item"><a class="item-link" href="#">Kitoblar</a></li>
-              <li class="site-list-item"><a class="item-link" href="#">Aksiyalar</a></li>
-              <li class="site-list-item"><a class="item-link" href="#">Kontaktlar</a></li>
-
-              <!-- SITE-BUTTON  -->
-              <li class="site-list-item"><a class="site-button site-button-one" href="#">Ro’yxatdan o’tish</a></li>
-            </ul>
-          </nav>
-        </div>
+        </nav>
       </div>
     </header>
 
 
     <!-- MAIN-CONTENT  -->
     <main class="main-content">
-      <div class="hero-one">
-        <div class="container">
-          <div class="main-hero">
-            <div class="hero-centent">
-              <hr class="orange-line">
-              <h2 class="hero-heading">Pythonda dasturlash asoslari</h2>
-              <p class="hero-paragraph">Dasturlash asoslariga oid o‘zbek tilidagi ilk eng mukammal qo‘llanma. Kitobning har bir bo‘limi uchun maxsus video darslar yozilgan bo‘lib, ularga kitobda ko‘rsatilgan QR kod orqali o‘tish mumkin.</p>
-              <a href="#" class="site-button">Buyurtma berish</a>
-            </div>
-
-
-            <img class="pyhton-img" src="img/python-book.jpg" width="510" height="510" srcset="img/python-book.jpg 1x, img/python-book@2x.jpg 2x" alt="python-book">
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <hr class="divider-orange">
+            <h2 class="hero__heading">Pythonda dasturlash asoslari</h2>
+            <p class="hero__paragraph">Dasturlash asoslariga oid o‘zbek tilidagi ilk eng mukammal qo‘llanma. Kitobning har bir bo‘limi uchun maxsus video darslar yozilgan bo‘lib, ularga kitobda ko‘rsatilgan QR kod orqali o‘tish mumkin.</p>
+            <a href="#" class="button">Buyurtma berish</a>
           </div>
+
+
+          <img class="hero__img" src="img/python-book.jpg" width="510" height="510" srcset="img/python-book.jpg 1x, img/python-book@2x.jpg 2x" alt="A Python book">
+        </div>
+      </section>
+
+
+      <!-- FEATURES  -->
+      <div class="features">
+        <div class="container">
+          <hr class="divider-orange divider-orange--features">
+          <h1 class="main-heading">Nega aynan<br>Akademnashr?</h1>
+
+          <ul class="features__list">
+
+            <li class="features__item">
+              <div class="features__badge">
+                <img class="features__badge-click" src="img/icons/cursor-click.png" width="48" height="48" srcset="img/icons/cursor-click.png 1x, img/icons/cursor-click@2x.png 2x" alt="" aria-hidden="true">
+              </div>
+
+              <div class="features__content">
+                <h3 class="features__heading">Oson buyurtma qilish</h3>
+                <p class="features__paragraph">Akademnashr.uz saytidan o’zingizga yoqqan kitobni sodda usulda buyurtma qila olasiz.</p>
+              </div>
+            </li>
+
+            <li class="features__item">
+              <div class="features__badge">
+                <img class="features__badge-star" src="img/icons/star.png" width="45" height="45" srcset="img/icons/star.png 1x, img/icons/star@2x.png 2x" alt="" aria-hidden="true">
+              </div>
+
+              <div class="features__content">
+                <h3 class="features__heading">Eng sara kitoblar</h3>
+                <p class="features__paragraph">Trenddagi eng ommabop, turli<br>auditoriyalarga mo’ljallangan har xil<br>janrdagi kitoblarni topa olasiz.</p>
+              </div>
+            </li>
+
+            <li class="features__item">
+              <div class="features__badge">
+                <img class="features__badge-lightning" src="img/icons/icon.png" width="40" height="50" srcset="img/icons/icon.png 1x, img/icons/icon@2x.png 2x" alt="" aria-hidden="true">
+              </div>
+
+              <div class="features__content">
+                <h3 class="features__heading">Tez yetkazib berish</h3>
+                <p class="features__paragraph">O’zbekistonning ixtiyoriy hududiga 3 ish kuni ichida, xalqaro buyurtmalarni 10 ish kuni ichida yetkazib beriladi.</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
 
 
-      <!-- HERO-TWO  -->
-      <div class="container">
-        <hr class="orange-line orange-line-two">
-        <h1 class="main-heading">Nega aynan <br> Akademnashr?</h1>
-      </div>
+      <!-- ADDITIONAL  -->
+      <div class="additional">
+        <div class="additional__container container">
 
-      <div class="container">
-        <ul class="hero-two-list">
-          <li class="hero-two-list-item">
-            <div class="hero-two-img-bg"><img class="hero-two-img" src="img/icons/cursor-click.png" width="48" height="48" srcset="img/icons/cursor-click.png 1x, img/icons/cursor-click@2x.png 2x" alt="cursor-click"></div>
-            <div class="hero-two-content">
-              <h3 class="hero-two-heading">Oson buyurtma qilish</h3>
-              <p class="hero-two-paragraph">Akademnashr.uz saytidan o’zingizga yoqqan kitobni sodda usulda buyurtma qila olasiz.</p>
-            </div>
-          </li>
-
-          <li class="hero-two-list-item">
-            <div class="hero-two-img-bg"><img class="hero-two-img two" src="img/icons/star.png" width="45" height="45" srcset="img/icons/star.png 1x, img/icons/star@2x.png 2x" alt="star-icon"></div>
-            <div class="hero-two-content">
-              <h3 class="hero-two-heading">Eng sara kitoblar</h3>
-              <p class="hero-two-paragraph">Trenddagi eng ommabop, turli hhhhh mo’ljallangan har xil janrdagi kitoblarni topa olasiz.</p>
-            </div>
-          </li>
-
-          <li class="hero-two-list-item">
-            <div class="hero-two-img-bg"><img class="hero-two-img three" src="img/icons/icon.png" width="40" height="50" srcset="img/icons/icon.png 1x, img/icons/icon@2x.png 2x" alt="icon"></div>
-            <div class="hero-two-content">
-              <h3 class="hero-two-heading">Tez yetkazib berish</h3>
-              <p class="hero-two-paragraph">O’zbekistonning ixtiyoriy hududiga 3 ish kuni ichida, xalqaro buyurtmalarni 10 ish kuni ichida yetkazib beriladi.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-
-      <!-- HERO-THREE  -->
-      <div class="container">
-        <div class="hero-three">
-          <div class="hero-three-action">
-            <div class="hero-three-content">
-              <h3 class="hero-three-heading">
+          <div class="additional__inner">
+            <div class="additional__content">
+              <h2 class="additional__heading">
                 Bolalar kitoblari uchun ajoyib aksiya!
-              </h3>
-              <p class="hero-three-paragraph">
+              </h2>
+              <p class="additional__paragraph">
                 Ertaklar, she’rlar, sarguzasht asarlar, fikrlashni o’stirish uchun turli mashq qo’llanmalari va komikslar.
               </p>
-              <p class="hero-three-paragraph hero-three-paragraph-two">
+              <p class="additional__paragraph additional__paragraph--extra">
                 Aksiyadagi eng katta to’plamda <span>50 ta kitob</span>ni <span>350 ming</span> so’mga (aslida 383 ming so’m) sotib olishingiz mumkin.
               </p>
-              <a class="site-button" href="#">Buyurtma berish</a>
+              <a class="button" href="#">Buyurtma berish</a>
             </div>
-            <img class="sale-img" src="img/sale-img.jpg" width="440" height="440" srcset="img/sale-img.jpg 1x, img/sale-img@2x.jpg 2x" alt="sale-img">
+            <img class="additional__img" src="img/sale-img.jpg" width="440" height="440" srcset="img/sale-img.jpg 1x, img/sale-img@2x.jpg 2x" alt="sale-img">
           </div>
         </div>
       </div>
     </main>
 
 
-    <!-- SITE-FOOTER  -->
+    <!-- SITE FOOTER  -->
     <footer class="site-footer">
       <div class="container">
-        <div class="footer-top">
-          <a class="site-logo" href="https://akademnashr.uz/" target="_blank">
+        <div class="site-footer__top">
+          <a class="logo" href="https://akademnashr.uz/" target="_blank">
             <img src="img/site-logo.svg" width="227" height="60" alt="site-logo">
           </a>
 
-          <ul class="social-media-list">
-            <li class="social-media-items">
-              <a class="social-media-link" href="https://t.me/akademnashr" target="_blank"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0Zm5.568 8.16c-.18 1.896-.96 6.504-1.356 8.628-.168.9-.504 1.2-.816 1.236-.696.06-1.224-.456-1.896-.9-1.056-.696-1.656-1.128-2.676-1.8-1.188-.78-.42-1.212.264-1.908.18-.18 3.252-2.976 3.312-3.228a.24.24 0 0 0-.06-.216c-.072-.06-.168-.036-.252-.024-.108.024-1.788 1.14-5.064 3.348-.48.324-.912.492-1.296.48-.432-.012-1.248-.24-1.86-.444-.756-.24-1.344-.372-1.296-.792.024-.216.324-.432.888-.66 3.504-1.524 5.832-2.532 6.996-3.012 3.336-1.392 4.02-1.632 4.476-1.632.096 0 .324.024.468.144.12.096.156.228.168.324-.012.072.012.288 0 .456Z" fill="currentColor"/></svg></a>
+          <ul class="media-list">
+            <li class="media-list__item">
+              <a class="media-list__link" href="https://t.me/akademnashr" target="_blank">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0Zm5.568 8.16c-.18 1.896-.96 6.504-1.356 8.628-.168.9-.504 1.2-.816 1.236-.696.06-1.224-.456-1.896-.9-1.056-.696-1.656-1.128-2.676-1.8-1.188-.78-.42-1.212.264-1.908.18-.18 3.252-2.976 3.312-3.228a.24.24 0 0 0-.06-.216c-.072-.06-.168-.036-.252-.024-.108.024-1.788 1.14-5.064 3.348-.48.324-.912.492-1.296.48-.432-.012-1.248-.24-1.86-.444-.756-.24-1.344-.372-1.296-.792.024-.216.324-.432.888-.66 3.504-1.524 5.832-2.532 6.996-3.012 3.336-1.392 4.02-1.632 4.476-1.632.096 0 .324.024.468.144.12.096.156.228.168.324-.012.072.012.288 0 .456Z" fill="currentColor"/>
+                </svg>
+              </a>
             </li>
 
-            <li class="social-media-items">
-              <a class="social-media-link" href="https://www.facebook.com/Akademnashr" target="_blank"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0Z" fill="currentColor"/></svg></a>
+            <li class="media-list__item">
+              <a class="media-list__link" href="https://www.facebook.com/Akademnashr" target="_blank">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0Z" fill="currentColor"/>
+                </svg>
+              </a>
             </li>
 
-            <li class="social-media-items">
-              <a class="social-media-link" href="https://www.instagram.com/akademnashr/" target="_blank"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001Z" fill="currentColor"/></svg></a>
+            <li class="media-list__item">
+              <a class="media-list__link" href="https://www.instagram.com/akademnashr/" target="_blank">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001Z" fill="currentColor"/>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
-        <hr class="footer-hr">
 
-        <!-- FOOTER-LINKS  -->
-        <ul class="footer-main-list">
+        <hr class="divider">
 
-          <li class="footer-main-item">
-            <ul class="footer-list">
-              <li class="footer-list-items">
-                <a href="#" class="footer-list-items-links">Bosh sahifa</a></li>
-                <li class="footer-list-items">
-                  <a href="#" class="footer-list-items-links">Kitoblar</a></li>
-                  <li class="footer-list-items">
-                    <a href="#" class="footer-list-items-links">Aksiyalar</a></li>
-                    <li class="footer-list-items">
-                      <a href="#" class="footer-list-items-links">Yangiliklar</a></li>
-                      <li class="footer-list-items">
-                        <a href="#" class="footer-list-items-links">Kontaktlar</a></li>
-                      </ul>
-                    </li>
+        <!-- FOOTER LINKS  -->
+        <div class="site-footer__bottom">
 
+          <ul class="link-list">
+            <li class="link-list__item">
+              <a  class="link-list__link" href="#">Bosh sahifa</a>
+            </li>
+            <li class="link-list__item">
+              <a  class="link-list__link" href="#">Kitoblar</a>
+            </li>
+            <li class="link-list__item">
+              <a  class="link-list__link" href="#">Aksiyalar</a>
+            </li>
+            <li class="link-list__item">
+              <a  class="link-list__link" href="#">Yangiliklar</a>
+            </li>
+            <li class="link-list__item">
+              <a  class="link-list__link" href="#">Kontaktlar</a>
+            </li>
+          </ul>
 
-                    <li class="footer-main-item">
-                      <ul class="footer-list">
-                        <li class="footer-list-items">
-                          <a href="#" class="footer-list-items-links">Ilmiy nashrlar</a></li>
-                          <li class="footer-list-items">
-                            <a href="#" class="footer-list-items-links">Ilmiy-ommabop nashrlar</a></li>
-                            <li class="footer-list-items">
-                              <a href="#" class="footer-list-items-links">Ma’rifiy nashrlar</a></li>
-                              <li class="footer-list-items">
-                                <a href="#" class="footer-list-items-links">Lug’atlar</a></li>
-                                <li class="footer-list-items">
-                                  <a href="#" class="footer-list-items-links">Adabiy-badiiy nashrlar</a></li>
-                                  <li class="footer-list-items">
-                                    <a href="#" class="footer-list-items-links">Abituriyentlar uchun</a></li>
-                                    <li class="footer-list-items">
-                                      <a href="#" class="footer-list-items-links">Bolalar uchun</a></li>
-                                    </ul>
-                                  </li>
+          <ul class="link-list">
+            <li class="link-list__item">
+              <a class="link-list__link" href="#">Ilmiy nashrlar</a>
+            </li>
+            <li class="link-list__item">
+              <a class="link-list__link" href="#">Ilmiy-ommabop nashrlar</a>
+            </li>
+            <li class="link-list__item">
+              <a class="link-list__link" href="#">Ma’rifiy nashrlar</a>
+            </li>
+            <li class="link-list__item">
+              <a class="link-list__link" href="#">Lug’atlar</a></li>
+              <li class="link-list__item">
+                <a class="link-list__link" href="#">Adabiy-badiiy nashrlar</a>
+              </li>
+              <li class="link-list__item">
+                <a class="link-list__link" href="#">Abituriyentlar uchun</a>
+              </li>
+              <li class="link-list__item">
+                <a class="link-list__link" href="#">Bolalar uchun</a>
+              </li>
+            </ul>
 
+            <ul class="link-list">
+              <li class="link-list__item">
+                <a class="link-list__link" href="#">Ko’p so’raladigan savollar</a>
+              </li>
+              <li class="link-list__item">
+                <a class="link-list__link" href="#">Yetkazib berish haqida</a>
+              </li>
+              <li class="link-list__item">
+                <a class="link-list__link" href="#">To’lov usullari haqida</a>
+              </li>
+            </ul>
 
-                                  <li class="footer-main-item">
-                                    <ul class="footer-list">
-                                      <li class="footer-list-items">
-                                        <a href="#" class="footer-list-items-links">Ko’p so’raladigan savollar</a></li>
-                                        <li class="footer-list-items">
-                                          <a href="#" class="footer-list-items-links">Yetkazib berish haqida</a></li>
-                                          <li class="footer-list-items">
-                                            <a href="#" class="footer-list-items-links">To’lov usullari haqida</a></li>
-                                          </ul>
-                                        </li>
+            <ul class="link-list">
+              <li class="link-list__item">
+                <a class="link-list__link" href="#">Bo’sh ish o’rinlari</a></li>
+                <li class="link-list__item">
+                  <a class="link-list__link" href="#">Biz bilan bog’lanish</a>
+                </li>
+                <li class="link-list__item">
+                  <a class="link-list__link" href="#">Maxfiylik nizomi</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
 
-
-                                        <li class="footer-main-item">
-                                          <ul class="footer-list">
-                                            <li class="footer-list-items">
-                                              <a href="#" class="footer-list-items-links">Bo’sh ish o’rinlari</a></li>
-                                              <li class="footer-list-items">
-                                                <a href="#" class="footer-list-items-links">Biz bilan bog’lanish</a></li>
-                                                <li class="footer-list-items">
-                                                  <a href="#" class="footer-list-items-links">Maxfiylik nizomi</a></li>
-                                                </ul>
-                                              </li>
-
-                                            </ul>
-                                          </div>
-                                        </footer>
-
-                                        <script src="js/main.js"></script>
-                                      </body>
-                                      </html>
+        <script src="js/main.js"></script>
+      </body>
+      </html>
