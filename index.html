@@ -22,19 +22,26 @@
     <header class="site-header">
       <div class="site-header__container container">
 
+        <!-- MENU  -->
+        <button class="menu js-menu" type="button">
+          <img class="menu__img" src="img/icons/bars-solid.svg" width="30" height="30" alt="Open naigation menu">
+        </button>
+
         <!-- LOGO  -->
-        <a class="logo" href="https://akademnashr.uz/" target="_blank">
-          <img src="img/site-logo.svg" width="227" height="60" alt="site-logo">
+        <a class="logo site-header__logo" href="https://akademnashr.uz/" target="_blank">
+          <img class="logo__img" src="img/site-logo.svg" width="227" height="60" alt="site-logo">
         </a>
 
         <!-- SITE-NAV  -->
         <nav class="sitenav">
-          <ul class="sitenav__list">
-            <li class="sitenav__item"><a class="sitenav__link" href="#">Bosh sahifa</a></li>
-            <li class="sitenav__item"><a class="sitenav__link" href="#">Kitoblar</a></li>
-            <li class="sitenav__item"><a class="sitenav__link" href="#">Aksiyalar</a></li>
-            <li class="sitenav__item"><a class="sitenav__link" href="#">Kontaktlar</a></li>
-          </ul>
+          <div class="sitenav__list-wrapper js-nav">
+            <ul class="sitenav__list">
+              <li class="sitenav__item"><a class="sitenav__link" href="#">Bosh sahifa</a></li>
+              <li class="sitenav__item"><a class="sitenav__link" href="#">Kitoblar</a></li>
+              <li class="sitenav__item"><a class="sitenav__link" href="#">Aksiyalar</a></li>
+              <li class="sitenav__item"><a class="sitenav__link" href="#">Kontaktlar</a></li>
+            </ul>
+          </div>
 
           <!-- BUTTON  -->
           <a class="button button--orange" href="#">
@@ -46,7 +53,7 @@
 
 
     <!-- MAIN-CONTENT  -->
-    <main class="main-content">
+    <main class="main-content" style="display: none;">
       <section class="hero">
         <div class="hero__container container">
           <div class="hero__content">
@@ -132,7 +139,7 @@
 
 
     <!-- SITE FOOTER  -->
-    <footer class="site-footer">
+    <footer class="site-footer" style="display: none;">
       <div class="container">
         <div class="site-footer__top">
           <a class="logo" href="https://akademnashr.uz/" target="_blank">

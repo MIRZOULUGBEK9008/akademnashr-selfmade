@@ -1,5 +1,8 @@
- const elDarkMode = document.querySelector('.change-color');
+const elButton = document.querySelector('.js-menu'),
+elNav = document.querySelector('.js-nav');
 
-elDarkMode.addEventListener('click', function () {
-  document.body.classList.add('dark-mode');
-} );
+if (elButton) {
+  elButton.addEventListener('click', function (){
+    elNav.classList.toggle('sitenav__list-wrapper--open');
+  });
+}

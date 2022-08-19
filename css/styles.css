@@ -60,6 +60,7 @@ body {
   line-height: 150%;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 img {
@@ -96,6 +97,7 @@ img {
   font-weight: 500;
   letter-spacing: 0.5px;
   transition: opacity 0.4s ease;
+  white-space: nowrap;
 }
 
 .button:hover {
@@ -130,7 +132,6 @@ img {
   flex-shrink: 0;
   display: flex;
   transition: opacity 0.4s ease;
-  margin-right: 30px;
 }
 
 .logo:hover {
@@ -141,11 +142,41 @@ img {
   opacity: 0.6;
 }
 
+.logo__img {
+  display: block;
+  width: 227px;
+  height: 60px;
+  object-fit: contain;
+}
+
+
+/* MENU  */
+.menu {
+  display: none;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 150;
+  flex-shrink: 0;
+}
+
+.menu__img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
 
 /* SITENAV  */
 .sitenav {
   display: flex;
-  margin-left: 30px;
+  align-items: center;
+}
+
+.sitenav__list-wrapper--open {
+  display: block;
 }
 
 .sitenav__list {
@@ -154,9 +185,10 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-right: 32px;
 }
 
-.sitenav__item {
+.sitenav__item:not(:last-child) {
   margin-right: 32px;
 }
 
@@ -470,4 +502,62 @@ span {
 
 .link-list__link:active {
   opacity: 0.6;
+}
+
+
+/* MEADIA */
+@media  (max-width: 1000px) {
+  .menu {
+    display: block;
+  }
+
+  .site-header__logo {
+    margin-left: 90px;
+  }
+
+  .sitenav__list-wrapper {
+    display: none;
+  }
+
+  .sitenav__list-wrapper--open {
+    display: block;
+  }
+
+  .sitenav__list-wrapper--open::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .sitenav__list-wrapper--open::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(37, 36, 32, 0.5);
+  }
+
+  .sitenav__list {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+  }
+
+  .sitenav__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .button--orange {
+    order: -1;
+  }
 }
