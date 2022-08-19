@@ -107,13 +107,14 @@ img {
   color: #fff;
   background-color: var(--site-main-color);
   border-radius: 4px;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: var(--site-main-font-family);
   font-size: 13px;
   line-height: normal;
   font-weight: 500;
   letter-spacing: 0.5px;
   transition: opacity 0.4s ease;
   white-space: nowrap;
+  text-align: center;
 }
 
 .button:hover {
@@ -150,6 +151,10 @@ img {
   transition: opacity 0.4s ease;
 }
 
+.logo--small {
+  display: none;
+}
+
 .logo:hover {
   opacity: 0.8;
 }
@@ -163,6 +168,10 @@ img {
   width: 227px;
   height: 60px;
   object-fit: contain;
+}
+
+.logo__img--small {
+  width: 38px;
 }
 
 
@@ -249,6 +258,8 @@ img {
 }
 
 .hero__content {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 387px;
 }
@@ -306,7 +317,6 @@ img {
 .main-heading {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin: 0;
   padding: 0;
   margin-bottom: 72px;
@@ -314,6 +324,8 @@ img {
   font-size: 72px;
   line-height: 120%;
   letter-spacing: 0.5px;
+  max-width: 435px;
+  width: 100%;
 }
 
 .main-heading::before {
@@ -334,6 +346,9 @@ img {
 }
 
 .features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
   max-width: 340px;
 }
@@ -343,8 +358,8 @@ img {
 }
 
 .features__badge {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   margin: 0;
   margin-bottom: 22px;
   display: flex;
@@ -355,23 +370,22 @@ img {
 }
 
 .features__badge-click {
-  width: 38px;
-  height: 38px;
+  width: 48px;
+  height: 48px;
 }
 
 .features__badge-stars {
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
 }
 
 .features__badge-lightning {
-  width: 30px;
-  height: 40px;
+  width: 40px;
+  height: 50px;
 }
 
 .features__content {
-  width: 100%;
-  max-width: 314px;
+  width: 92%;
 }
 
 .features__heading {
@@ -412,6 +426,9 @@ img {
 }
 
 .additional__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
   max-width: 440px;
 }
@@ -683,11 +700,151 @@ span {
     justify-content: center;
   }
 
-  .link-list {
+  .link-list-wrapper {
     margin-bottom: 50px;
   }
 
   .link-list__item:not(:last-child) {
     margin-bottom: 12px;
+  }
+}
+
+
+/* 900px */
+@media (max-width: 900px) {
+  .logo {
+    display: none;
+  }
+
+  .logo--small {
+    display: flex;
+  }
+
+  .hero__container {
+    flex-direction: column;
+  }
+
+  .hero__content {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .button--hero {
+    margin-left: auto;
+  }
+
+  .button--additional {
+    margin-left: auto;
+  }
+
+  .hero__img {
+    width: 80%;
+    top: 0;
+    position: static;
+    object-position: top;
+  }
+
+  .main-heading {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .main-heading::before {
+    display: none;
+  }
+
+  .features__list {
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    align-items: center;
+    text-align: center;
+    max-width: 50%;
+  }
+
+  .features__item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .additional__inner {
+    flex-direction: column;
+  }
+
+  .additional__content {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .additional__img {
+    width: 80%;
+    object-position: top;
+    position: static;
+    top: 0;
+    right: 0;
+  }
+}
+
+
+/* 600px */
+@media (max-width:600px) {
+  .logo--small {
+    display: none;
+  }
+
+  .sitenav__list {
+    top: 90px;
+    left: 50px;
+  }
+
+  .hero__img {
+    height: 310px;
+  }
+
+  .main-heading {
+    font-size: 52px;
+    margin-bottom: 52px;
+  }
+
+  .features {
+    padding-bottom: 160px;
+  }
+
+  .features__list {
+    padding-bottom: 60px;
+  }
+
+  .features__item {
+    max-width: 100%;
+  }
+
+  .features__content {
+    max-width: 65%;
+  }
+
+  .additional__inner {
+    padding: 51px 24px 40px;
+  }
+
+  .additional__img {
+    height: 210px;
+  }
+
+  .media-list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .link-list-wrapper {
+    width: 100%;
+  }
+
+  .link-list-wrapper:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .site-footer__bottom {
+    padding-bottom: 36px;
   }
 }
