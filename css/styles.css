@@ -790,8 +790,17 @@ span {
 
 /* 600px */
 @media (max-width:600px) {
+  .site-header__container {
+    justify-content: stretch;
+  }
+
   .logo--small {
-    display: none;
+    order: -1;
+    margin-right: auto;
+  }
+
+  .button--orange {
+   display: none;
   }
 
   .sitenav__list {
@@ -832,11 +841,6 @@ span {
     height: 210px;
   }
 
-  .media-list {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .link-list-wrapper {
     width: 100%;
   }
@@ -845,9 +849,18 @@ span {
     margin-bottom: 50px;
   }
 
+  .link-list {
+    align-items: center;
+  }
+
+  .link-list__link {
+    font-size: 14px;
+  }
+
   .site-footer__bottom {
     padding-bottom: 36px;
   }
+
 }
 
 
