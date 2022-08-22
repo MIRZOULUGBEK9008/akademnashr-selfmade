@@ -193,6 +193,18 @@ img {
   object-fit: contain;
 }
 
+.menu__img-open--block {
+  display: none;
+}
+
+.menu__img-close {
+  display: none;
+}
+
+.menu__img-close--block {
+  display: block;
+}
+
 
 /* SITENAV  */
 .sitenav {
@@ -581,8 +593,8 @@ span {
   }
 
   .sitenav__list-wrapper--open {
-    display: block;
     z-index: 100;
+    display: block;
   }
 
   .sitenav__list-wrapper--open::before {
@@ -590,7 +602,6 @@ span {
     position: absolute;
     left: 0;
     top: 0;
-    bottom: 0;
     width: 50%;
     height: 100vh;
     background-color: #fff;
@@ -601,7 +612,6 @@ span {
     position: absolute;
     right: 0;
     top: 0;
-    bottom: 0;
     width: 50%;
     height: 100vh;
     background-color: rgba(37, 36, 32, 0.5);
@@ -614,6 +624,9 @@ span {
     flex-direction: column;
     align-items: flex-start;
     margin-right: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding-right: 15%;
   }
 
   .sitenav__item:not(:last-child) {
@@ -800,12 +813,23 @@ span {
   }
 
   .button--orange {
-   display: none;
+    display: none;
+  }
+
+  .sitenav__list-wrapper--open::before {
+    right: 0;
+    left: 50%;
+  }
+
+  .sitenav__list-wrapper--open::after {
+    left: 0;
   }
 
   .sitenav__list {
+    align-items: flex-end;
     top: 90px;
-    left: 50px;
+    right: 30px;
+    padding-right: 10%;
   }
 
   .hero__img {
@@ -876,6 +900,10 @@ span {
 
   .sitenav__list-wrapper::after {
     display: none;
+  }
+
+  .sitenav__list {
+    padding-right: 0;
   }
 
   .hero {
