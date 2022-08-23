@@ -732,6 +732,12 @@ span {
     display: flex;
   }
 
+  .sitenav__list {
+    height: 100vh;
+    overflow-y: auto;
+    padding-right: 15%;
+  }
+
   .hero__container {
     flex-direction: column;
   }
