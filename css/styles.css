@@ -104,7 +104,7 @@ body {
   font-family: var(--site-main-font-family);
   font-size: 16px;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 1.5;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -334,7 +334,7 @@ img {
   color: #fff;
   font-family: var(--site-heading-font-family);
   font-size: 40px;
-  line-height: 48px;
+  line-height: 1.2;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -454,7 +454,7 @@ img {
   margin-bottom: 12px;
   font-family: var(--site-heading-font-family);
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.2;
   letter-spacing: 0.5px;
 }
 
@@ -500,7 +500,7 @@ img {
   color: #fff;
   font-family: var(--site-heading-font-family);
   font-size: 40px;
-  line-height: 48px;
+  line-height: 1.2;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -691,7 +691,6 @@ span {
 
   .hero__heading {
     font-size: 35px;
-    line-height: 43px;
     margin-bottom: 19px;
   }
 
@@ -720,7 +719,6 @@ span {
 
   .features__heading {
     font-size: 19px;
-    line-height: 24px;
   }
 
   .additional__container {
@@ -738,7 +736,6 @@ span {
 
   .additional__heading {
     font-size: 35px;
-    line-height: 43px;
     margin-bottom: 19px;
   }
 
@@ -982,7 +979,6 @@ span {
 
   .hero__heading {
     font-size: 30px;
-    line-height: 38px;
   }
 
   .hero__img {
@@ -1018,7 +1014,6 @@ span {
 
   .additional__heading {
     font-size: 35px;
-    line-height: 38px;
   }
 }
 
