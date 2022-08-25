@@ -7,7 +7,7 @@ elClose = document.querySelector('.js-close');
 
 // Loader
 document.addEventListener('DOMContentLoaded', function (){
-  setTimeout(function(){
+  setTimeout(function() {
     elLoader.classList.add('lds-dual-ring-wrapper--none');
   }, 800);
 });

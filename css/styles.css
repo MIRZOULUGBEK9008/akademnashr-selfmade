@@ -666,8 +666,8 @@ span {
 
   .sitenav__list {
     position: absolute;
-    left: 100px;
-    top: 100px;
+    left: 8%;
+    top: 17%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -777,12 +777,19 @@ span {
 
   .logo--small {
     display: flex;
+    width: 28px;
+    height: 50px;
+  }
+
+  .menu__img {
+    width: 25px;
+    height: 25px;
   }
 
   .sitenav__list {
     height: 100vh;
     overflow-y: auto;
-    padding-right: 15%;
+    padding-right: 3%;
   }
 
   .hero__container {
@@ -883,8 +890,7 @@ span {
 
   .sitenav__list {
     align-items: flex-end;
-    top: 90px;
-    right: 50px;
+    right: 7%;
   }
 
   .hero__img {
@@ -960,8 +966,7 @@ span {
 
   .sitenav__list {
     align-items: center;
-    top: 120px;
-    right: calc(50% - 92px);
+    padding-right: 0;
   }
 
   .hero {
