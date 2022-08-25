@@ -667,7 +667,7 @@ span {
   .sitenav__list {
     position: absolute;
     left: 8%;
-    top: 17%;
+    top: 20%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1026,6 +1026,7 @@ span {
   .button {
     font-size: 12px;
   }
+
   .hero__heading {
     font-size: 25px;
     margin-bottom: 14px;
